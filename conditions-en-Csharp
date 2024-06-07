@@ -1,0 +1,34 @@
+using System;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+
+
+        Console.WriteLine("Entrez un entier minimum :");
+        int min = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Entrez un entier maximum :");
+        int max = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Entrez un entier :");
+        int integer = Convert.ToInt32(Console.ReadLine());
+
+        if (integer < min)
+        {
+            Console.WriteLine($"Vous avez entré {integer} qui est inférieur à {min} qui est le minimum.");
+            Console.WriteLine($"Entier résultant : {min}");
+        }
+        else if (integer > max)
+        {
+            Console.WriteLine($"Vous avez entré {integer} qui est supérieur à {max} qui est le maximum.");
+            Console.WriteLine($"Entier résultant : {max}");
+        }
+        else
+        {
+            Console.WriteLine($"Entier résultant : {integer}");
+        }
+        
+    }
+}
